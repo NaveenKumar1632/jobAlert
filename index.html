@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB ALERT</title>
+    <script src="https://kit.fontawesome.com/ebd4072091.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+
+<body>
+    <div class="loaded ">
+        <div class="loaded-content content style">
+            <div class="loaded-logo" >
+                <h2>JOB <strong>ALERT</strong></h2>
+                 <!-- <div class="load ">
+                    <div class="load-content content style">
+                    </div>
+                    <p>Please Wait Loading ...</p> 
+                </div>  -->
+            </div> 
+            
+        </div>
+    </div>
+    <header>
+        <div class="header" >
+            <div class="logo" >
+                <h2>JOB <strong>ALERT</strong></h2>
+            </div>
+            
+            <div class="profile-menu">
+                <span>.</span>
+            </div>
+            
+            
+            <div class="profile-slider">
+                <i class="fa-solid fa-arrow-left arrow-mark"></i>
+                <div class="profile-types content">
+                    <!-- <i class="fa-regular fa-pen-to-square edit"></i> -->
+        
+                    <!-- <div class="per-profiles">  
+                        <div class="personal-title style">
+                            <h2>Personal Details</h2>
+                        </div>
+                        <div class="profile-img style">
+                            <div class="img"></div>
+                        </div>
+                        <div class="forms-per">
+                            <i class="fa-regular fa-pen-to-square trash-bin"></i>
+                            <div class="que-name">
+                                <p>Name:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            <div class="que-name">
+                                <p>Email:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            <div class="que-name">
+                                <p>Location:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            <div class="que-name">
+                                <p>Mobile Number:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="edu-profile">
+                        <div class="educ-title style">
+                            <h2>Educational Details</h2>
+                        </div>
+                        <div class="forms-edu">
+                            <i class="fa-regular fa-pen-to-square trash-bin"></i>
+                            <div class="que-name">
+                                <p>Highest Details:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            <div class="que-name">
+                                <p>Specialization:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            <div class="que-name">
+                                <p>University:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                            <div class="que-name">
+                                <p>Year of Passing:</p>
+                            </div>
+                            <div class="ans-name">
+                                <p>navin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="res-profile">
+                        <div class="resumes-title style">
+                            <h2>Resume</h2>
+                        </div>
+                        <div class="forms-resume ">
+                            <i class="fa-regular fa-pen-to-square trash-bin"></i>
+                            <div class="que-name">
+                                <p>title</p>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                
+                
+            </div>
+          
+            
+            <div class="personals-details " >
+                <div class="personal-details forms " >
+                    <i class="fa-solid fa-xmark" id="x-mark"></i>
+                    <div class="per-title style">
+                        <h2>Update Profile</h2>
+                    </div>
+                
+                    <div class="per-profile">
+                            <div class="profile"> 
+                                <img src="/image/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="Profilepicture" id="img">   
+                                <input type="file" id="files" name="profileimg" accept="image/*">
+                                <label for="files" ><i class="fa-solid fa-camera" id="camera-icon" class="upload"></i></label>
+                            </div>
+                        </div>
+                        
+                        <div class="per-form">
+                            <form name="profile" id="per-form">   
+                            <label for="per-name">Name <span>*</span></label>
+                            <input type="text" name="name" placeholder="Enter your name" id="per-name" required>
+                            <label for="per-email">Email <span>*</span></label>
+                            <input type="email" name="email" placeholder="Enter your email" id="per-email" required>
+                            <label for="per-location">Location <span>*</span></label>
+                            <input type="text" name="location" placeholder="Enter your location" id="per-location"
+                                required>
+                            <label for="per-number">Mobile Number <span>*</span></label>
+                            <input type="text" name="number" placeholder="Enter your number" id="pre-number" required>
+                            <button type="submit" id="per-btn" class="per-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="edu-details forms ">
+                    <div class="edu-title style">
+                        <h2>Educational Details</h2>
+                    </div>
+                    <div class="edu-form">
+                        <form name="qualification">
+                            <label for="edu-degree">Highest Qualification <span>*</span></label>
+                            <input type="text" id="edu-degree" name="degree" required>
+                            <label for="edu-Special">Specialization <span>*</span></label>
+                            <input type="text" id="edu-Special" name="speci" required>
+                            <label for="edu-Univer">University<span>*</span></label>
+                            <input type="text" id="edu-Univer" name="univer" required>
+                            <label for="edu-year">Year of passing<span>*</span></label>
+                            <input type="text" id="edu-year" name="year" required>
+                            <button type="submit" id="per-btn" class="per-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="resume-details  forms ">
+                    <div class="resume-title style">
+                        <h2>Upload Resume</h2>
+                    </div>
+                    <div class="upload-resume">
+                        <div class="upload-content">
+                            <form name="resume">
+                                <input type="file" id="resume-file" name="resumefile" >
+                                <label for="resume-file">Upload</label><br>
+                                <label >Doc,Pdf Maximum file size 1mb</label><br>
+                                <button type="submit" id="res-btn" class="per-btn">Submit</button>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    
+    <main >
+        <section class="search-boxs mt" >
+            <div class="search-box">
+                <form name="searchbox">
+                    <div class="search-categories">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass" ></i>
+                        <input type="text" placeholder="Search Job Title Ex: webdesigner" id="skill" >
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Location" >
+                        <i class="fa-solid fa-briefcase"></i>
+                        <input type="text" placeholder="Experience" >
+                    </div>
+                    <!-- <button type="submit" class="search-btn">Search</button> -->
+                </form>
+            </div>
+        </section>
+
+        <section class="menu">
+            
+        </section>
+
+        
+        <section class="jobs-cards mb">
+            <div class="card-grid content">
+                <div class="card" data-item="webdeveloper chennai fresher">
+                    <div class="card-title">
+                        <h2>Web Developer</h2>
+                        <p>wipro</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>chennai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>fresher</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>10,000-12,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,PHP</p>
+                        </div>
+                    </div>
+
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="webdeveloper chennai 1year">
+                    <div class="card-title">
+                        <h2>Web Developer</h2>
+                        <p>TCS</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>chennai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>1-2 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>20,000-25,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,PHP,SQL</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="frontenddeveloper madurai fresher">
+                    <div class="card-title">
+                        <h2>Front End Developer</h2>
+                        <p>wipro</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Madurai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>fresher</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>10,000-12,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,REACT,BOOSTRAP</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="webdesigner coimbatore fresher">
+                    <div class="card-title">
+                        <h2>Web Designer</h2>
+                        <p>Zoho</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Coimbatore</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>1-2 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>25,000-30,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,BOOSTRAP,FIGMA</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="backenddeveloper mumbai 2years">
+                    <div class="card-title">
+                        <h2>Back End Developer</h2>
+                        <p>Accenture</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Mumbai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>2-3 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>40,000-45,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>JAVA,PYTHON,NODEJS</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply" >Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="fullstackdeveloper chennai 2years">
+                    <div class="card-title">
+                        <h2>Fullstack Developer</h2>
+                        <p>HCL</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Chennai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>2-3 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>40,000-45,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,REACT,BOOSTRAP,PHP,JAVA</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="frontenddeveloper bangalore 3years">
+                    <div class="card-title">
+                        <h2>Front End Developer</h2>
+                        <p>Wipro</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Bangalore</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>3-4 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>50,000-55,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,REACT,BOOSTRAP,ANGULAR</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="bankmanager coimbatore 5years">
+                    <div class="card-title">
+                        <h2>Front End Developer</h2>
+                        <p>HCL</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Coimbatore</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>5-6 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>50,000-52,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>LEADERSHIP,MAITAINBANK</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="webdesigner chennai 0-1year">
+                    <div class="card-title">
+                        <h2>Web Designer</h2>
+                        <p>Zoho</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Chennai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>fresher</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>20,000-25,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,REACT,BOOSTRAP</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="webdeveloper mumbai 1year">
+                    <div class="card-title">
+                        <h2>Web Developer</h2>
+                        <p>Infosys</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Mumbai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>0-1 year</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>20,000-25,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,PHP</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                <div class="card " data-item="clerk madurai 1year">
+                    <div class="card-title">
+                        <h2>Clerk</h2>
+                        <p>icici Bank</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Madurai</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>0-1 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>12,000-15,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>MSOFFICE</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>
+                 <div class="card " data-item="fullstackdeveloper bangalore 4years">
+                    <div class="card-title">
+                        <h2>Fullstack Developer</h2>
+                        <p>Accenture</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Bangalore</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-sharp fa-solid fa-briefcase"></i>
+                            <p>4-5 years</p>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <p>50,000-,55,000</p>
+                        </div>
+
+                    </div>
+                    <div class="card-skills">
+                        <div class="skills-title">
+                            <p>Key Skills:</p>
+                        </div>
+                        <div class="skills">
+                            <p>HTML,CSS,JAVASCRIPT,REACT,BOOSTRAP,PHP,JAVA</p>
+                        </div>
+                    </div>
+                    <div class="card-more">
+                        <button class="apply">Apply</button>
+
+                    </div>
+                </div>   
+                <div class="apply-result">
+                    <div class="apply-content">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="apply-text">
+                            <h3>Thank You!</h3>
+                            <p>Your form was submitted successfully</p>
+                            <button id="homebtn">Back to Home</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            <div class="pages">
+                <li class="nxt-page"><a href="page.html">Next Page</a><i class="fa-solid fa-arrow-right"></i></li>
+            </div>
+        </section>
+
+        <section class="companies mb ">
+            <div class="com-heading content style">
+                <h2>Top Companies</h2>
+            </div>
+            <div class="com-content content style">
+                <div class="slide">
+                    <div class="com-img">
+                        <img src="image/Infosys_logo.webp" alt="">
+                    </div>
+                    <div class="com-img">
+                        <img src="image/images.jpg" alt="">
+                    </div>    
+                    <div class="com-img">
+                        <img src="image/HCL-Logo.jpg" alt="">
+                    </div>
+                    <div class="com-img">
+                        <img src="image/icici-bank-ne-logo.jpg" alt="">
+                    </div>
+                    <div class="com-img">
+                        <img src="image/wipro-limited-vector-logo.png" alt="">
+                    </div>
+                    <div class="com-img">
+                        <img src="image/accenture-square.webp" alt="">
+                    </div>
+                        
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer content " >
+                <div class="footer-logo" >
+                    <h2>JOB <strong>ALERT</strong></h2>
+                </div>
+                <div class="job-type">
+                    <div class="it-jobs">
+                        <div class="job-title">
+                            <h3>IT Jobs:</h3>
+                        </div>
+                        <div class="jobs-list">
+                            <li><a href="#">Web developer</a></li>
+                            <li><a href="#">web designer</a></li>
+                            <li><a href="#">frontend developer</a></li>
+                            <li><a href="#">backend developer</a></li>
+                            <li><a href="#">fullstack developer</a></li>
+                        </div>
+                    </div>
+                    <div class="bacnking-jobs">
+                        <div class="job-title">
+                            <h3>Banking Jobs:</h3>
+                        </div>
+                        <div class="jobs-list">
+                            <li><a href="#">Bank manager</a></li>
+                            <li><a href="#">Assistant manager</a></li>
+                            <li><a href="#">clerk</a></li>
+                            
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="contact">
+                    <div class="social-heading">
+                        <h3>Find us</h3>
+                    </div>
+                    <div class="social-icon">
+                        <div class="icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    
+                        </div>
+                        <div class="help">
+                            <a href="#">Help</a> <span>&#47</span>
+                            <a href="#">Contact-us</a> <span>&#47</span>
+                            <a href="#">feedback</a>
+                        </div>
+                        
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom style ">
+            <p>Copyright &copy;JOB ALERT</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
